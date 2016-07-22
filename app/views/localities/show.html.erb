@@ -1,0 +1,7 @@
+<h2><%= @locality.locality_name %></h2>
+<h3><%= @locality.hospital_name %></h3>
+<p><%= @locality.address %></p>
+
+<%= link_to "Back", root_path %>
+<%= link_to "Edit", edit_locality_path(@locality) %>
+<%= link_to "delete", locality_path(@locality), method: :delete, data: { confirm: "Are you sure?"} %>

@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
- 
-   root 'application#hello'
+ 	resources :localities
+   root 'localities#index'
  
  end

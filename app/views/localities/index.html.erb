@@ -1,0 +1,6 @@
+<h1>Hospital App</h1>
+<%= @localities.each do |locality| %>
+<h2><%= link_to locality.hospital_name,locality_path(locality)%></h2>
+<% end %>
+
+<%= link_to  "Add Hospital", new_locality_path %> 

@@ -2,7 +2,13 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.6'
 
+gem 'sqlite3'
+
 gem 'sass-rails', '~> 5.0'
+
+gem 'simple_form', '~> 3.2', '>= 3.2.1'
+
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 
 gem 'uglifier', '>= 1.3.0'
 
@@ -18,17 +24,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
 
-  gem 'sqlite3', '1.3.11'
-  gem 'byebug', '9.0.0', platform: :mri
+gem 'byebug' 
+
+gem 'web-console','~> 2.0'
+
+gem 'spring'
+
 end
 
-group :development do
-
-  gem 'web-console', '~> 2.0'
-
-
-  gem 'spring'
-end
-group :production do
-gem 'pg', '0.18.4'
-end
